@@ -1,17 +1,16 @@
 package com.example.githubrepos.domain.repositories
 
 import com.example.githubrepos.domain.entities.RepoEntity
+import kotlinx.coroutines.flow.Flow
 
 interface UserRepository {
 
     suspend fun getListRepository(username: String): List<RepoEntity>
 
-    fun getDownloadedListRepository(): List<RepoEntity>
+    fun getDownloadedListRepository(): Flow<List<RepoEntity>>
 
-    suspend fun downloadRepositoryUseCase(repoEntity: RepoEntity): Long
+    suspend fun downloadRepositoryUseCase(repoId: Int): Long
 
-    suspend fun addDownloadedRepository(repoEntity: RepoEntity)
-
-    fun getItemRepository(id: Int): RepoEntity
+    suspend fun addDownloadedRepository(repoId: Int)
 
 }
