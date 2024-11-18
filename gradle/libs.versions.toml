@@ -1,0 +1,64 @@
+[versions]
+agp = "8.4.1"
+kotlin = "1.9.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+splashscreen = "1.0.1"
+browser = "1.8.0"
+navigation = "2.8.4"
+glide = "4.16.0"
+retrofit = "2.11.0"
+okHttpInterceptor = "5.0.0-alpha.10"
+room = "2.6.1"
+hilt = "2.51.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen" }
+androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "browser" }
+
+#NAVIGATION
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+
+#GLIDE
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+
+#RETROFIT
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+okhttp-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttpInterceptor" }
+
+#DATABASE
+room = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compilier = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-testing = { group = "androidx.room", name = "room-testing", version.ref = "room" }
+
+#HILT
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compilier = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+room = { id = "androidx.room", version.ref = "room" }
+
+
+
